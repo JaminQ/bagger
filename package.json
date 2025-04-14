@@ -1,0 +1,26 @@
+{
+  "name": "bagger",
+  "version": "0.0.1",
+  "description": "一键配置开发环境",
+  "main": "./bin/bagger.js",
+  "scripts": {
+    "bagger": "node bin/bagger.js",
+    "git": "node bin/bagger.js git",
+    "bash": "node bin/bagger.js bash",
+    "postinstall": "sh bin/updateConfig.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaminQ/bagger.git"
+  },
+  "bin": {
+    "bagger": "./bin/bagger.js"
+  },
+  "author": "JaminQ",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "gitconfig": "^2.0.8",
+    "minimist": "^1.2.0"
+  }
+}

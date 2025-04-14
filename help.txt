@@ -1,0 +1,14 @@
+usage: bagger [<command>] [options] [arguments]
+
+<command>:
+  git                        Config git
+  bash                       Config bash
+  all                        Config all
+
+Options:
+  -v, --version              View bagger version
+  --help                     Get docs
+  -l <path>                  Use local config
+  --gc <private_token>       Use git.code config
+
+你可以输入`bagger --help -c`来获取中文文档。

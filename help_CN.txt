@@ -1,0 +1,14 @@
+用法：bagger [<command>] [options] [arguments]
+
+<命令>：
+  git                        配置git
+  bash                       配置bash
+  all                        配置全部
+
+选项：
+  -v, --version              查看bagger当前版本
+  --help                     获取帮助
+  -l <path>                  使用本地配置
+  --gc <private_token>       使用git.code配置
+
+You can use `bagger --help` to get English docs.
