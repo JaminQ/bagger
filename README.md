@@ -35,7 +35,7 @@ source ~/.bash_profile # 或重新登录后生效
 
 ## 如何修改内置配置
 
-内置配置托管在我自己的[qinit_config](http://git.code.oa.com/jaminqian/qinit_config)上，由于git.code没有Fork功能，所以你可以提Issue给我，或者直接私聊我。
+内置配置托管在我自己的[qinit_config](https://github.com/JaminQ/my-env/blob/master/git.json)上。
 
 ## 使用本地配置
 
@@ -49,11 +49,11 @@ qinit -l local-config-path # -l修饰符表示使用本地配置
 
 ## 使用托管配置（**推荐**）
 
-1. 在你的帐号下[新建一个Project](http://git.code.oa.com/projects/new)并使用`qinit_config`做命名；
-1. 在该Project里放置这些[配置文件](#配置文件)；
-1. 在[此处](http://git.code.oa.com/profile/account)获取你的`private_token`；
+1. 在你的帐号下[新建一个Repo](https://github.com/new)并使用`qinit_config`做命名；
+1. 在该Repo里放置这些[配置文件](#配置文件)；
+1. 在[此处](#待补充)获取你的`private_token`；
 1. 运行命令。
 
 ```shell
-qinit --gc your-private_token # --gc修饰符表示使用git.code配置
+qinit --gc your-private_token # --gc修饰符表示使用github配置
 ```

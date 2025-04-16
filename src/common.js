@@ -47,21 +47,21 @@ const getConfigFile = (file, callback) => {
         typeof callback === 'function' && callback(null);
       }
       break;
-    case 'git.code': // 使用git.code配置
-      axios.get(`http://git.code.oa.com/api/v3/projects/${getUserName()}%2Fqinit_config/repository/blobs/master`, {
-        params: {
-          filepath: file,
-          private_token: qinitEnv.privateToken
-        }
-      }).then(res => {
-        if (res.status === 200) {
-          typeof callback === 'function' && callback(res.data, true);
-        } else {
-          console.error('Wrong private_token.');
-          typeof callback === 'function' && callback(null);
-        }
-      });
-      break;
+    // case 'github': // 使用github配置
+    //   axios.get('', {
+    //     params: {
+    //       filepath: file,
+    //       private_token: qinitEnv.privateToken
+    //     }
+    //   }).then(res => {
+    //     if (res.status === 200) {
+    //       typeof callback === 'function' && callback(res.data, true);
+    //     } else {
+    //       console.error('Wrong private_token.');
+    //       typeof callback === 'function' && callback(null);
+    //     }
+    //   });
+    //   break;
     case 'internal': // 使用内置配置
       typeof callback === 'function' && callback(path.join(fixPath(__dirname), 'config', file));
       break;
